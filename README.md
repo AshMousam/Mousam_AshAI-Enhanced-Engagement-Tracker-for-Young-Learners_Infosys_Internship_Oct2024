@@ -207,23 +207,27 @@ This function organizes images and their label files into matched and unmatched 
 This function draws bounding boxes on images based on annotations in the label files.
 
 - **Input:**
+![image](https://github.com/user-attachments/assets/00912d51-adb0-4966-99b3-050b5ebdf0b5)
 
-![gun4](https://github.com/user-attachments/assets/ccba6a57-2506-4524-9c24-f384a5b248fa)
 
 - **Output:**
 
-![gun4](https://github.com/user-attachments/assets/71dba9a6-37ac-4bcd-aa4f-74e589bcfd09)
+![image](https://github.com/user-attachments/assets/9313c7f1-aa45-45e5-bd1f-625b73ca6a57)
+
 
 #### C) `label_manipulate`
 This function updates class numbers in label files for object detection tasks.
 
 - **Input:**
 
-![Screenshot 2024-11-13 174620](https://github.com/user-attachments/assets/20cbc002-8864-42e5-9ad9-f64203421d26)
+![image](https://github.com/user-attachments/assets/f37cebd8-1bec-4b76-be9e-d4ca59d9cc13)
+
+
 
 - **Output:**
 
-![Screenshot 2024-11-13 174644](https://github.com/user-attachments/assets/1e71f3f6-cee9-45e7-bca6-eac2f35e6822)
+![image](https://github.com/user-attachments/assets/ec43245d-01b4-4b4e-9e70-ef4088e713d4)
+
 
 ## Face Recognition
 
@@ -241,24 +245,28 @@ This performs real-time face recognition to identify whether the person in live 
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![mousam_photo](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
+
 
 - **Output:**
 
-![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+![image](https://github.com/user-attachments/assets/87f7bfdf-e0e0-41fb-b9a6-4ffdd58afc04)
+
 
 #### B) `Attendence_save`
 Using a live video stream, this performs real-time face recognition to identify He/She. When He/She's face is recognized, his/her name is displayed on the video feed, and the recognition event is logged with the date and time in an Excel file. After every 5 recognitions, the current log is saved to an Excel file, and the recognition counter and DataFrame are reset.
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![mousam_photo](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
 
 - **Output:**
 
-![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+![image](https://github.com/user-attachments/assets/d902b33c-7639-4a2a-ab97-3706af531af6)
 
-![Screenshot 2024-11-13 180336](https://github.com/user-attachments/assets/e7a4fb5d-3d86-49b2-928e-6b6c65dbf1ba)
+
+![image](https://github.com/user-attachments/assets/0953d67b-0e85-43ab-b7d5-2a2887aba4fa)
+
 
 #### C) `test`
 This performs real-time face recognition to identify He/She in a live video feed, logging each recognition event with the date and time into an Excel file every 30 seconds. It tracks recognition intervals to avoid duplicate entries and displays He/She or "Not He/She" based on identification.
@@ -278,13 +286,15 @@ This performs real-time face recognition using the live camera feed to identify 
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![mousam_photo](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
 
 - **Output:**
 
-![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+![image](https://github.com/user-attachments/assets/0e67fd69-db4d-49be-88e6-9a331d62ccc5)
 
-![Screenshot 2024-11-13 181459](https://github.com/user-attachments/assets/dcf0f639-e3a6-43fe-8ef0-e32741429a6c)
+
+![image](https://github.com/user-attachments/assets/f6575fd2-b8fb-4915-8864-90d3de696025)
+
 
 
 #### E) `excel_sc`
