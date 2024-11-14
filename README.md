@@ -85,11 +85,13 @@ G) image_hsv :- This converts a color image from the BGR color space (used by Op
 
 Input :- 
 
-![image2](https://github.com/user-attachments/assets/5479802e-f49e-4fa5-b71a-aadcd2e99669)
+![OIP](https://github.com/user-attachments/assets/b26c4076-3591-4631-b8f4-7d85f87664db)
+
 
 Output :- 
 
-![Screenshot 2024-11-12 191501](https://github.com/user-attachments/assets/8f41752f-f210-4628-b18f-8104f28da96e)
+![image](https://github.com/user-attachments/assets/9e4412e2-9501-47db-881b-5020a43faed3)
+
 
 H) image_morphological_transformation :- This applies morphological operations, opening, and closing, to a grayscale image to process noise and gaps. `Opening` (erosion followed by dilation) removes small noise from the image, while `Closing` (dilation followed by erosion) fills small holes or gaps. The processed images are displayed in separate windows, showing the effects of noise removal and gap filling.
 
