@@ -133,11 +133,13 @@ K) image_rotate :- This rotates an image by 90 degrees around its center. It fir
 
 Input :- 
 
-![image2](https://github.com/user-attachments/assets/ff931e78-37ad-40d6-a0df-67d37aa092af)
+![download](https://github.com/user-attachments/assets/a16a3e78-45a2-47db-ad11-3c8756eb0b37)
+
 
 Output :- 
 
-![Screenshot 2024-11-12 184152](https://github.com/user-attachments/assets/35d20bb4-ab51-464d-bd1e-4d295f5c50c0)
+![image](https://github.com/user-attachments/assets/bd727570-7d95-4a42-ba44-1c78ada5a74c)
+
 
 L) image_blur :- This code applies a Gaussian blur to an image using a 15x15 kernel size, which helps in reducing image noise and detail. The blurred image is then displayed in a separate window.
 
