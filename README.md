@@ -72,11 +72,13 @@ F) image_histogram_equalization :- This performs **histogram equalization** on a
 
 Input :-
 
-![image2](https://github.com/user-attachments/assets/8c328a4b-f195-43b7-be73-4dd1163514e2)
+![download](https://github.com/user-attachments/assets/98640483-f13c-436a-96c7-0c4a0003d686)
+
 
 Output :- 
 
-![Screenshot 2024-11-12 191809](https://github.com/user-attachments/assets/bc26db27-1cee-4a85-a7d5-8fce5286a190)
+![image](https://github.com/user-attachments/assets/ee2eadcc-2ebf-44e2-b49d-3ce756ff56bc)
+
 
 
 G) image_hsv :- This converts a color image from the BGR color space (used by OpenCV) to the HSV color space using the `cv2.cvtColor()` function. The result is displayed in a separate window, where the image is represented in Hue, Saturation, and Value (HSV) instead of the standard Blue, Green, Red (BGR) format.
