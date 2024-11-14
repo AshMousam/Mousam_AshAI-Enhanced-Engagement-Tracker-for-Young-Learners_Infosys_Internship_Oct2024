@@ -121,11 +121,13 @@ J) image_rgb2gray :- This converts a color image to grayscale using `cv2.cvtColo
 
 Input :- 
 
-![image2](https://github.com/user-attachments/assets/bb3ec4c2-fe8c-43fd-9d54-14ce6f897cef)
+![OIP](https://github.com/user-attachments/assets/d2b162f2-c5e4-4e41-9436-8f75611e0197)
+
 
 Output : - 
 
-![Screenshot 2024-11-12 180732](https://github.com/user-attachments/assets/fcf4a4c2-bda8-48bf-b729-9db743544b74)
+![image](https://github.com/user-attachments/assets/1673a693-b249-4499-bf88-55862193a748)
+
 
 K) image_rotate :- This rotates an image by 90 degrees around its center. It first calculates the center point and then creates a rotation matrix with a 90-degree angle. Using `cv2.warpAffine()`, the image is rotated and displayed in a separate window. 
 
