@@ -35,21 +35,25 @@ C) image_crop :- It extracts a specific region from the original image, defined 
 
 Input :-
 
-![image2](https://github.com/user-attachments/assets/73ac45ba-c582-41c4-bc64-bb676fb03ee6)
+![OIP](https://github.com/user-attachments/assets/a44f9b5a-6251-4020-8621-cdb8a941ecc1)
+
 
 Output :- 
 
-![Screenshot 2024-11-12 184754](https://github.com/user-attachments/assets/869d7954-38cc-48c4-85d2-eb36f91a6dcc)
+![image](https://github.com/user-attachments/assets/d8bfd525-0d02-44c0-a372-02d2a8ea37fa)
+
 
 D) image_dilation & erosion :- A kernel matrix is used to perform dilation and erosion, which enhance and reduce certain features of the image, respectively. The results of these morphological operations, dilated and eroded images, are displayed in separate windows.
 
 Input :- 
 
-![image1](https://github.com/user-attachments/assets/56bac27b-1030-4214-bb4b-98410044474f)
+![download](https://github.com/user-attachments/assets/e426342c-d132-472f-ac3d-6d8a7d9d7f85)
+
 
 Output :- 
 
-![Screenshot 2024-11-12 183359](https://github.com/user-attachments/assets/7ad6f206-45bd-44c3-934a-f93257777c38)
+![image](https://github.com/user-attachments/assets/eb05eeb4-86e5-4fd6-960d-0aba939527a0)
+
 
 E) image_edge detection:- This detects edges in a grayscale image using the **Canny edge detection** algorithm. The `cv2.Canny()` function is applied with threshold values of 100 and 200 to identify edges in the image. The resulting edge-detected image is displayed in a separate window.
 
