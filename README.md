@@ -355,13 +355,16 @@ The system continues until you press 'q' to exit.
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![mousam_photo](https://github.com/user-attachments/assets/043e1cd9-a586-4f51-9e9c-76d2e69397bf)
+
 
 - **Output:**
 
-![Guru Teja_2024-11-07_20-16-27](https://github.com/user-attachments/assets/20b1feef-0c90-4832-a128-45268391b394)
+![image](https://github.com/user-attachments/assets/a153f6ac-cf89-4aa0-90d7-cebe64bc7758)
 
-![Screenshot 2024-11-13 181911](https://github.com/user-attachments/assets/5de5e452-ba9d-4062-a23b-a02604d9ff3d)
+
+![image](https://github.com/user-attachments/assets/ff1229d5-f576-46d1-b57b-713056cdb7f5)
+
 
 #### H) `atten_score`
 This script captures real-time webcam video to recognize "His/Her's face" and assess attentiveness based on head pose:
@@ -376,13 +379,16 @@ Exits on 'q' press, ensuring the final save to Excel.
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![mousam_photo](https://github.com/user-attachments/assets/731848e6-0bce-4971-84fe-e756729d76b6)
+
 
 - **Output:**
 
-![Guru Teja_2024-11-07_21-34-50](https://github.com/user-attachments/assets/40f12cd5-c468-459c-a610-395366915ff8)
+![image](https://github.com/user-attachments/assets/cd5d5421-1e46-49fc-a07d-511cb2fad86e)
 
-![Screenshot 2024-11-13 182336](https://github.com/user-attachments/assets/45034df8-9044-4850-b471-ba579c1a942a)
+
+![image](https://github.com/user-attachments/assets/65a0dafe-eebf-48ab-a8df-08d4b0e08c7e)
+
 
 #### I) `avg_atten_score`
 This captures webcam video, performs face recognition for "His/Her's face," calculates attentiveness based on the head pose, and logs the data into an Excel file every 30 seconds. Here is a summary of its key actions:
@@ -397,10 +403,14 @@ The final output includes an Excel file with logged details and an average atten
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![mousam_photo](https://github.com/user-attachments/assets/3e8f0c19-08cf-497c-8463-89e6b6e4de95)
+
 
 - **Output:**
 
-![Guru Teja_2024-11-07_22-10-43](https://github.com/user-attachments/assets/ace6a953-372a-4297-b598-3aa79f8ef4f3)
+![image](https://github.com/user-attachments/assets/c45ca786-e6de-4f19-867f-f643e5aee5ab)
 
-![Screenshot 2024-11-13 183057](https://github.com/user-attachments/assets/ad3ba39e-0b64-42f7-836a-2e0f3cacc442)
+![image](https://github.com/user-attachments/assets/399a5178-f728-4e24-8dca-df6dc5536b0f)
+![image](https://github.com/user-attachments/assets/3eb18991-da16-42e7-add4-685c8d950ff2)
+
+
