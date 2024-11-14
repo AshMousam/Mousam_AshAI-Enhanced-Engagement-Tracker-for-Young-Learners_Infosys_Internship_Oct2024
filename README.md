@@ -109,11 +109,13 @@ I) image_resize :- This resizes an input image, to the dimensions of a given ran
 
 Input :- 
 
-![image1](https://github.com/user-attachments/assets/701c01c1-17fe-408e-b030-6113d813aa02)
+![OIP](https://github.com/user-attachments/assets/0c31f8d3-5465-47b5-8f52-4c28825f8a67)
+
 
 Output :- 
 
-![Screenshot 2024-11-12 184440](https://github.com/user-attachments/assets/fcb29fb6-e559-4b00-b56e-27c0667ea6dc)
+![image](https://github.com/user-attachments/assets/c1a2006d-19a4-47c3-b4c4-657becff578d)
+
 
 J) image_rgb2gray :- This converts a color image to grayscale using `cv2.cvtColor()` and saves the grayscale version image. The grayscale image is then displayed in a separate window.
 
