@@ -24,11 +24,12 @@ B) image_contour :- This detects contours in a grayscale image. First, it applie
 
 Input :- 
 
-![image1](https://github.com/user-attachments/assets/a9a0bf8b-d49f-4544-83b2-c4928b3cadad)
+![OIP](https://github.com/user-attachments/assets/4a0c9a80-c161-4199-b332-6d0c3cb5ffcc)
 
 Output :- 
 
-![Screenshot 2024-11-12 185456](https://github.com/user-attachments/assets/f358e843-f3a0-460d-89be-29415a6b6361)
+![image](https://github.com/user-attachments/assets/aa14d5c1-5a83-435d-9c22-39fe5de41ef4)
+
 
 C) image_crop :- It extracts a specific region from the original image, defined by the pixel range, and displays the cropped section in a separate window.
 
