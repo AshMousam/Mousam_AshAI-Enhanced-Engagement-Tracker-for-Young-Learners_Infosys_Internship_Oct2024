@@ -59,11 +59,13 @@ E) image_edge detection:- This detects edges in a grayscale image using the **Ca
 
 Input :- 
 
-![image1](https://github.com/user-attachments/assets/f5396844-9c99-4fa8-8ffd-0b8bcfdbb126)
+![download](https://github.com/user-attachments/assets/671b4832-f723-4816-9c1b-631a87ff0993)
+
 
 Output :- 
 
-![Screenshot 2024-11-12 184609](https://github.com/user-attachments/assets/979c708c-63e2-4fb2-bec0-24b87a9d8259)
+![image](https://github.com/user-attachments/assets/43a4e365-4793-41bd-8282-e38404e3f56f)
+
 
 
 F) image_histogram_equalization :- This performs **histogram equalization** on a grayscale image to improve the contrast of the image. The `cv2.equalizeHist()` function enhances the image by redistributing the intensity values across the full range, making the dark areas brighter and the bright areas darker. The resulting equalized image is displayed in a separate window.
