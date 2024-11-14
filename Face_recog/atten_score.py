@@ -16,8 +16,8 @@ landmark_predictor = dlib.shape_predictor(p)
 if not os.path.exists("screenshots"):
     os.makedirs("screenshots")
 
-# Load the known image of Barack Obama
-known_image = face_recognition.load_image_file("obama.jpg")
+# Load the known image of Mousam
+known_image = face_recognition.load_image_file("mousam_photo.jpg")
 known_faces = face_recognition.face_encodings(known_image, num_jitters=50, model='large')[0]
 
 # Create a DataFrame to store recognized face information
@@ -25,7 +25,7 @@ columns = ['Name', 'Date', 'Time', 'Screenshot', 'Attentive', 'Attention Score']
 df = pd.DataFrame(columns=columns)
 
 # Launch the live camera or video
-cam = cv.VideoCapture('1000097197.mp4')
+cam = cv.VideoCapture(0)
 if not cam.isOpened():
     print("Camera not working")
     exit()
@@ -103,10 +103,10 @@ try:
             distance = face_recognition.face_distance([known_faces], face_encoding)[0]
 
             if distance < 0.6:
-                # Recognized as Barack Obama
+                # Recognized as Mousam
                 now = datetime.now()
                 date_time_str = now.strftime("%Y-%m-%d %H:%M:%S")
-                name = 'Barack Obama'
+                name = 'Mousam Ash'
                 
                 # Landmark detection for attentiveness analysis
                 face_landmarks = landmark_predictor(gray, dlib.rectangle(left, top, right, bottom))
