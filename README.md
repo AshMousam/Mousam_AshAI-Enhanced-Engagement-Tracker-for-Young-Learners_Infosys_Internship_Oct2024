@@ -273,13 +273,15 @@ This performs real-time face recognition to identify He/She in a live video feed
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![mousam_photo](https://github.com/user-attachments/assets/323fea74-a68d-45bb-905e-64105c64ab98)
+
 
 - **Output:**
 
-![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+![image](https://github.com/user-attachments/assets/412ad2ad-0468-4976-aed0-5f78486af917)
 
-![Screenshot 2024-11-13 181026](https://github.com/user-attachments/assets/95c8a7ee-4008-426b-8869-0a978acda369)
+
+![image](https://github.com/user-attachments/assets/b37c0bcc-0dd5-420b-bafe-e981e66a91b9)
 
 #### D) `tools`
 This performs real-time face recognition using the live camera feed to identify He/She. Each time a face is recognized, it records the name, date, and time in a data frame. Once a recognition count of 5 is reached, it saves the records to an Excel file, then resets the counter and DataFrame. It displays "He/She's name" or "Not He/She's name" over the video feed, and pressing 'q' exits the program with a final save of any remaining records.
