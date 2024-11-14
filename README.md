@@ -97,11 +97,13 @@ H) image_morphological_transformation :- This applies morphological operations, 
 
 Input :- 
 
-![image1](https://github.com/user-attachments/assets/fbb6e46f-8dfa-4e38-981e-3c856064fd8f)
+![OIP](https://github.com/user-attachments/assets/744e8b69-4baa-43ed-8329-dc838f8a0c60)
+
 
 Output :- 
 
-![Screenshot 2024-11-12 190221](https://github.com/user-attachments/assets/3d8d9970-5f23-4848-afdc-ec744d9339b5)
+![image](https://github.com/user-attachments/assets/28fc43c4-f03e-4068-b6d6-12a0ac280aeb)
+
 
 I) image_resize :- This resizes an input image, to the dimensions of a given range of pixels. The resized image is then displayed in a separate window.
 
