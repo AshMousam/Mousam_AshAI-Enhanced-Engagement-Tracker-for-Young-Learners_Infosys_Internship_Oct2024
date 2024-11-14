@@ -1,416 +1,354 @@
-# Mousam_AshAI-Enhanced-Engagement-Tracker-for-Young-Learners_Infosys_Internship_Oct2024
-infosys spring bord internship
-Image Processing 
+# **AI-Enhanced Engagement Tracker for Young Learners**
+### **Infosys Springboard Internship - October 2024**
 
-Libraries or Frame Works used - opencv 
+#### **Image Processing with OpenCV**
 
-Version - 4.10.0.84 
+This project utilizes **OpenCV** for developing various image processing functionalities to enhance engagement tracking for young learners. The project focuses on operations like image concatenation, contour detection, cropping, morphological transformations, and more.
 
-Developed Logics -
+- **Library/Framework**: OpenCV
+- **Version**: 4.10.0.84
 
-A) image_concatenation:- This resizes two images, to given trange of pixels and combines them both horizontally and vertically. Using np.hstack() and np.vstack(), the images are concatenated side-by-side and one on top of the other, respectively. The concatenated results are displayed in separate windows.
+---
 
-Input :-
-![download](https://github.com/user-attachments/assets/9877bd95-e226-426c-9395-bc59153199a3)
-![OIP](https://github.com/user-attachments/assets/4a0c9a80-c161-4199-b332-6d0c3cb5ffcc)
+## **Developed Features**
 
+### A) **Image Concatenation**
+- Resizes two input images to a specified pixel range and combines them horizontally and vertically.
+- Uses `np.hstack()` for horizontal concatenation and `np.vstack()` for vertical concatenation.
+- Displays concatenated results in separate windows.
 
-Output :- 
+**Input:**
+![Input Image 1](https://github.com/user-attachments/assets/9877bd95-e226-426c-9395-bc59153199a3)
+![Input Image 2](https://github.com/user-attachments/assets/4a0c9a80-c161-4199-b332-6d0c3cb5ffcc)
 
-![image](https://github.com/user-attachments/assets/bb95e7e3-61fa-4c3d-b2ee-8705892ea3bc)
+**Output:**
+![Concatenated Image](https://github.com/user-attachments/assets/bb95e7e3-61fa-4c3d-b2ee-8705892ea3bc)
 
+---
 
-B) image_contour :- This detects contours in a grayscale image. First, it applies a binary threshold to the image to separate foreground from background. Then, it finds contours using cv2.findContours() and draws them onto the original image in green. The result, with highlighted contours, is displayed in a separate window.
+### B) **Image Contour Detection**
+- Detects contours in a grayscale image by applying a binary threshold.
+- Uses `cv2.findContours()` to identify contours and draws them in green.
+- Displays the contour-highlighted image in a separate window.
 
-Input :- 
+**Input:**
+![Grayscale Input](https://github.com/user-attachments/assets/4a0c9a80-c161-4199-b332-6d0c3cb5ffcc)
 
-![OIP](https://github.com/user-attachments/assets/4a0c9a80-c161-4199-b332-6d0c3cb5ffcc)
+**Output:**
+![Contour Output](https://github.com/user-attachments/assets/aa14d5c1-5a83-435d-9c22-39fe5de41ef4)
 
-Output :- 
+---
 
-![image](https://github.com/user-attachments/assets/aa14d5c1-5a83-435d-9c22-39fe5de41ef4)
+### C) **Image Crop**
+- Extracts a specific region from the original image based on a defined pixel range.
+- Displays the cropped image in a separate window.
 
+**Input:**
+![Input Image](https://github.com/user-attachments/assets/a44f9b5a-6251-4020-8621-cdb8a941ecc1)
 
-C) image_crop :- It extracts a specific region from the original image, defined by the pixel range, and displays the cropped section in a separate window.
+**Output:**
+![Cropped Output](https://github.com/user-attachments/assets/d8bfd525-0d02-44c0-a372-02d2a8ea37fa)
 
-Input :-
+---
 
-![OIP](https://github.com/user-attachments/assets/a44f9b5a-6251-4020-8621-cdb8a941ecc1)
+### D) **Image Dilation & Erosion**
+- Uses a kernel matrix to perform morphological dilation and erosion, enhancing or reducing specific features.
+- Displays both dilated and eroded images in separate windows.
 
+**Input:**
+![Input Image](https://github.com/user-attachments/assets/e426342c-d132-472f-ac3d-6d8a7d9d7f85)
 
-Output :- 
+**Output:**
+![Dilated & Eroded Output](https://github.com/user-attachments/assets/eb05eeb4-86e5-4fd6-960d-0aba939527a0)
 
-![image](https://github.com/user-attachments/assets/d8bfd525-0d02-44c0-a372-02d2a8ea37fa)
+---
 
+### E) **Edge Detection**
+- Applies **Edge Detection** with threshold values of 100 and 200.
+- Displays the edge-detected image in a separate window.
 
-D) image_dilation & erosion :- A kernel matrix is used to perform dilation and erosion, which enhance and reduce certain features of the image, respectively. The results of these morphological operations, dilated and eroded images, are displayed in separate windows.
+**Input:**
+![Grayscale Input](https://github.com/user-attachments/assets/671b4832-f723-4816-9c1b-631a87ff0993)
 
-Input :- 
+**Output:**
+![Edge Detection Output](https://github.com/user-attachments/assets/43a4e365-4793-41bd-8282-e38404e3f56f)
 
-![download](https://github.com/user-attachments/assets/e426342c-d132-472f-ac3d-6d8a7d9d7f85)
+---
 
+### F) **Histogram Equalization**
+- Enhances the contrast of a grayscale image using histogram equalization.
+- Displays the equalized image in a separate window.
 
-Output :- 
+**Input:**
+![Grayscale Input](https://github.com/user-attachments/assets/98640483-f13c-436a-96c7-0c4a0003d686)
 
-![image](https://github.com/user-attachments/assets/eb05eeb4-86e5-4fd6-960d-0aba939527a0)
+**Output:**
+![Equalized Output](https://github.com/user-attachments/assets/ee2eadcc-2ebf-44e2-b49d-3ce756ff56bc)
 
+---
 
-E) image_edge detection:- This detects edges in a grayscale image using the **Canny edge detection** algorithm. The `cv2.Canny()` function is applied with threshold values of 100 and 200 to identify edges in the image. The resulting edge-detected image is displayed in a separate window.
+### G) **HSV Conversion**
+- Converts a BGR image to the HSV color space.
+- Displays the HSV-converted image in a separate window.
 
-Input :- 
+**Input:**
+![BGR Input](https://github.com/user-attachments/assets/b26c4076-3591-4631-b8f4-7d85f87664db)
 
-![download](https://github.com/user-attachments/assets/671b4832-f723-4816-9c1b-631a87ff0993)
+**Output:**
+![HSV Output](https://github.com/user-attachments/assets/9e4412e2-9501-47db-881b-5020a43faed3)
 
+---
 
-Output :- 
+### H) **Morphological Transformation (Opening & Closing)**
+- Performs `Opening` (erosion followed by dilation) to remove noise and `Closing` (dilation followed by erosion) to fill gaps.
+- Displays the processed images in separate windows.
 
-![image](https://github.com/user-attachments/assets/43a4e365-4793-41bd-8282-e38404e3f56f)
+**Input:**
+![Input Image](https://github.com/user-attachments/assets/744e8b69-4baa-43ed-8329-dc838f8a0c60)
 
+**Output:**
+![Morphological Transformation Output](https://github.com/user-attachments/assets/28fc43c4-f03e-4068-b6d6-12a0ac280aeb)
 
+---
 
-F) image_histogram_equalization :- This performs **histogram equalization** on a grayscale image to improve the contrast of the image. The `cv2.equalizeHist()` function enhances the image by redistributing the intensity values across the full range, making the dark areas brighter and the bright areas darker. The resulting equalized image is displayed in a separate window.
+### I) **Image Resize**
+- Resizes the input image to specified dimensions.
+- Displays the resized image in a separate window.
 
-Input :-
+**Input:**
+![Input Image](https://github.com/user-attachments/assets/0c31f8d3-5465-47b5-8f52-4c28825f8a67)
 
-![download](https://github.com/user-attachments/assets/98640483-f13c-436a-96c7-0c4a0003d686)
+**Output:**
+![Resized Output](https://github.com/user-attachments/assets/c1a2006d-19a4-47c3-b4c4-657becff578d)
 
+---
 
-Output :- 
+### J) **RGB to Grayscale Conversion**
+- Converts a color image to grayscale using `cv2.cvtColor()` and saves the result.
+- Displays the grayscale image in a separate window.
 
-![image](https://github.com/user-attachments/assets/ee2eadcc-2ebf-44e2-b49d-3ce756ff56bc)
+**Input:**
+![Input Image](https://github.com/user-attachments/assets/d2b162f2-c5e4-4e41-9436-8f75611e0197)
 
+**Output:**
+![Grayscale Output](https://github.com/user-attachments/assets/1673a693-b249-4499-bf88-55862193a748)
 
+---
 
-G) image_hsv :- This converts a color image from the BGR color space (used by OpenCV) to the HSV color space using the `cv2.cvtColor()` function. The result is displayed in a separate window, where the image is represented in Hue, Saturation, and Value (HSV) instead of the standard Blue, Green, Red (BGR) format.
+### K) **Image Rotation**
+- Rotates the image by 90 degrees around its center using `cv2.warpAffine()`.
+- Displays the rotated image in a separate window.
 
-Input :- 
+**Input:**
+![Input Image](https://github.com/user-attachments/assets/a16a3e78-45a2-47db-ad11-3c8756eb0b37)
 
-![OIP](https://github.com/user-attachments/assets/b26c4076-3591-4631-b8f4-7d85f87664db)
+**Output:**
+![Rotated Output](https://github.com/user-attachments/assets/bd727570-7d95-4a42-ba44-1c78ada5a74c)
 
+---
 
-Output :- 
+### L) **Image Blur**
+- Applies a Gaussian blur with a 15x15 kernel to reduce noise and smooth the image.
+- Displays the blurred image in a separate window.
 
-![image](https://github.com/user-attachments/assets/9e4412e2-9501-47db-881b-5020a43faed3)
+**Input:**
+![Input Image](https://github.com/user-attachments/assets/e3e2cfad-ab4e-4696-87bc-f7b176b06d18)
 
+**Output:**
+![Blurred Output](https://github.com/user-attachments/assets/dfe50e24-cbe3-491d-be99-e7b7b433c681)
 
-H) image_morphological_transformation :- This applies morphological operations, opening, and closing, to a grayscale image to process noise and gaps. `Opening` (erosion followed by dilation) removes small noise from the image, while `Closing` (dilation followed by erosion) fills small holes or gaps. The processed images are displayed in separate windows, showing the effects of noise removal and gap filling.
+---
 
-Input :- 
+#### **Image and Video Processing with OpenCV**
 
-![OIP](https://github.com/user-attachments/assets/744e8b69-4baa-43ed-8329-dc838f8a0c60)
+This project leverages **OpenCV** for developing various image and video processing functions, with additional support for annotations to enhance engagement tracking for young learners. The project includes operations such as noise removal, morphological transformations, template matching, and more.
 
+- **Library/Framework**: OpenCV
+- **Version**: 4.10.0.84
 
-Output :- 
+---
 
-![image](https://github.com/user-attachments/assets/28fc43c4-f03e-4068-b6d6-12a0ac280aeb)
+## **Image Processing**
 
-
-I) image_resize :- This resizes an input image, to the dimensions of a given range of pixels. The resized image is then displayed in a separate window.
-
-Input :- 
-
-![OIP](https://github.com/user-attachments/assets/0c31f8d3-5465-47b5-8f52-4c28825f8a67)
-
-
-Output :- 
-
-![image](https://github.com/user-attachments/assets/c1a2006d-19a4-47c3-b4c4-657becff578d)
-
-
-J) image_rgb2gray :- This converts a color image to grayscale using `cv2.cvtColor()` and saves the grayscale version image. The grayscale image is then displayed in a separate window.
-
-Input :- 
-
-![OIP](https://github.com/user-attachments/assets/d2b162f2-c5e4-4e41-9436-8f75611e0197)
-
-
-Output : - 
-
-![image](https://github.com/user-attachments/assets/1673a693-b249-4499-bf88-55862193a748)
-
-
-K) image_rotate :- This rotates an image by 90 degrees around its center. It first calculates the center point and then creates a rotation matrix with a 90-degree angle. Using `cv2.warpAffine()`, the image is rotated and displayed in a separate window. 
-
-Input :- 
-
-![download](https://github.com/user-attachments/assets/a16a3e78-45a2-47db-ad11-3c8756eb0b37)
-
-
-Output :- 
-
-![image](https://github.com/user-attachments/assets/bd727570-7d95-4a42-ba44-1c78ada5a74c)
-
-
-L) image_blur :- This code applies a Gaussian blur to an image using a 15x15 kernel size, which helps in reducing image noise and detail. The blurred image is then displayed in a separate window.
-
-Input :- 
-
- ![download](https://github.com/user-attachments/assets/e3e2cfad-ab4e-4696-87bc-f7b176b06d18)
-
-
-Output :- 
-
-![image](https://github.com/user-attachments/assets/dfe50e24-cbe3-491d-be99-e7b7b433c681)
-
-
+### **Developed Features**
 
 #### M) `image_noise_removal & closing_gaps`
-This function removes noise and fills gaps using morphological operations.
+- **Functionality**: Uses morphological operations to remove noise and fill gaps in the image, helping to clean up the image data for better clarity and analysis.
 
 #### N) `image_template`
-This function performs template matching to locate a template image within a larger image.
+- **Functionality**: Performs template matching to locate a template image within a larger image, enabling the identification of specific regions of interest.
 
-## Video Processing
+---
 
-### Libraries or Frameworks Used:
+## **Video Processing**
+
+### **Libraries or Frameworks Used:**
 - **OpenCV**: Version 4.10.0.84
 
-### Developed Logics:
+### **Developed Features**
 
 #### A) `Video_multivideo`
-This function reads and displays images from a specified folder, printing the dimensions of each image.
+- **Functionality**: Reads and displays images from a specified folder, printing the dimensions of each image for inspection and verification.
 
 #### B) `Video_fps`
-This function captures video from the webcam, displays it in real-time, and calculates the FPS.
+- **Functionality**: Captures video from the webcam, displays it in real-time, and calculates the frames per second (FPS), allowing users to monitor the performance.
 
 #### C) `Video_save`
-This function captures live video and saves it to a specified output file.
+- **Functionality**: Captures live video and saves it to a specified output file, enabling users to record and review footage.
 
 #### D) `Video_stack`
-This function reads and resizes two video files, concatenating them horizontally.
+- **Functionality**: Reads and resizes two video files, concatenating them horizontally, which allows for side-by-side video comparisons.
 
 #### E) `Video_stream`
-This function captures live video from the webcam and displays it in real-time.
+- **Functionality**: Captures live video from the webcam and displays it in real-time, providing a continuous live stream for immediate feedback.
 
-## Annotations
+---
 
-### Libraries or Frameworks Used:
+## **Annotations**
+
+### **Libraries or Frameworks Used:**
 - **OpenCV**: Version 4.10.0.84
 - **LabelImg**: Version 1.8.6
 
-### Developed Logics:
+### **Developed Features**
 
 #### A) `data_segregate`
-This function organizes images and their label files into matched and unmatched directories.
+- **Functionality**: Organizes images and their label files by moving them into `matched` and `unmatched` directories based on their label status, making data management easier.
 
 - **Input:**
-
-![image](https://github.com/user-attachments/assets/02e52f2f-6748-4001-afc5-5dcd6b0878d1)
-
+  ![Input Image](https://github.com/user-attachments/assets/02e52f2f-6748-4001-afc5-5dcd6b0878d1)
 
 - **Output:**
-
-![image](https://github.com/user-attachments/assets/2d4752e2-503a-42d0-960d-a8c4052ea4af)
-
+  ![Output Image](https://github.com/user-attachments/assets/2d4752e2-503a-42d0-960d-a8c4052ea4af)
 
 #### B) `label`
-This function draws bounding boxes on images based on annotations in the label files.
+- **Functionality**: Draws bounding boxes on images based on annotations in the label files, helping to visualize detected objects and regions of interest.
 
 - **Input:**
-![image](https://github.com/user-attachments/assets/00912d51-adb0-4966-99b3-050b5ebdf0b5)
-
+  ![Input Image](https://github.com/user-attachments/assets/00912d51-adb0-4966-99b3-050b5ebdf0b5)
 
 - **Output:**
-
-![image](https://github.com/user-attachments/assets/9313c7f1-aa45-45e5-bd1f-625b73ca6a57)
-
+  ![Output Image](https://github.com/user-attachments/assets/9313c7f1-aa45-45e5-bd1f-625b73ca6a57)
 
 #### C) `label_manipulate`
-This function updates class numbers in label files for object detection tasks.
+- **Functionality**: Updates class numbers in label files for object detection tasks, facilitating the reclassification or adjustment of labels as needed.
 
 - **Input:**
-
-![image](https://github.com/user-attachments/assets/f37cebd8-1bec-4b76-be9e-d4ca59d9cc13)
-
-
+  ![Input Image](https://github.com/user-attachments/assets/f37cebd8-1bec-4b76-be9e-d4ca59d9cc13)
 
 - **Output:**
+  ![Output Image](https://github.com/user-attachments/assets/ec43245d-01b4-4b4e-9e70-ef4088e713d4)
 
-![image](https://github.com/user-attachments/assets/ec43245d-01b4-4b4e-9e70-ef4088e713d4)
+---
 
+This project leverages **OpenCV**, **dlib**, and **face_recognition** libraries to perform real-time face recognition, attentiveness tracking, and attendance logging for online educational applications. The goal is to improve engagement tracking by capturing detailed data on student participation, attentiveness, and facial recognition events.
 
-## Face Recognition
+---
 
-### Libraries or Frameworks Used:
+## **Face Recognition**
+
+### **Libraries or Frameworks Used:**
 - **OpenCV**: Version 4.10.0.84
 - **LabelImg**: Version 1.8.6
 - **dlib**: Version 19.24.6
 - **face_recognition**: Version 1.3.0
 - **imutils**: Version 0.5.4
 
-### Developed Logics:
+### **Developed Features**
 
 #### A) `Face_recognition`
-This performs real-time face recognition to identify whether the person in live video frames a known image by comparing. His name is displayed if He/She is recognized; otherwise, "Not He/She" appears.
+- **Functionality**: Performs real-time face recognition to identify whether the individual in live video frames matches a known face. Displays the person’s name if recognized; otherwise, shows "Not Recognized."
 
 - **Input:**
-
-![mousam_photo](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
-
+  ![Sample Input Image](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
 
 - **Output:**
-
-![image](https://github.com/user-attachments/assets/87f7bfdf-e0e0-41fb-b9a6-4ffdd58afc04)
-
+  ![Sample Output Image](https://github.com/user-attachments/assets/87f7bfdf-e0e0-41fb-b9a6-4ffdd58afc04)
 
 #### B) `Attendence_save`
-Using a live video stream, this performs real-time face recognition to identify He/She. When He/She's face is recognized, his/her name is displayed on the video feed, and the recognition event is logged with the date and time in an Excel file. After every 5 recognitions, the current log is saved to an Excel file, and the recognition counter and DataFrame are reset.
+- **Functionality**: Utilizes a live video feed to identify and log attendance with date and time. After five recognitions, saves records to an Excel file and resets the counter.
 
 - **Input:**
-
-![mousam_photo](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
+  ![Sample Input Image](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
 
 - **Output:**
-
-![image](https://github.com/user-attachments/assets/d902b33c-7639-4a2a-ab97-3706af531af6)
-
-
-![image](https://github.com/user-attachments/assets/0953d67b-0e85-43ab-b7d5-2a2887aba4fa)
-
+  ![Sample Output Image](https://github.com/user-attachments/assets/d902b33c-7639-4a2a-ab97-3706af531af6)
+  ![Additional Output Image](https://github.com/user-attachments/assets/0953d67b-0e85-43ab-b7d5-2a2887aba4fa)
 
 #### C) `test`
-This performs real-time face recognition to identify He/She in a live video feed, logging each recognition event with the date and time into an Excel file every 30 seconds. It tracks recognition intervals to avoid duplicate entries and displays He/She or "Not He/She" based on identification.
+- **Functionality**: Recognizes faces in a live video feed, logging each identification event every 30 seconds to Excel to avoid duplicates. Displays "Recognized" or "Not Recognized."
 
 - **Input:**
-
-![mousam_photo](https://github.com/user-attachments/assets/323fea74-a68d-45bb-905e-64105c64ab98)
-
+  ![Sample Input Image](https://github.com/user-attachments/assets/323fea74-a68d-45bb-905e-64105c64ab98)
 
 - **Output:**
-
-![image](https://github.com/user-attachments/assets/412ad2ad-0468-4976-aed0-5f78486af917)
-
-
-![image](https://github.com/user-attachments/assets/b37c0bcc-0dd5-420b-bafe-e981e66a91b9)
+  ![Sample Output Image](https://github.com/user-attachments/assets/412ad2ad-0468-4976-aed0-5f78486af917)
+  ![Additional Output Image](https://github.com/user-attachments/assets/b37c0bcc-0dd5-420b-bafe-e981e66a91b9)
 
 #### D) `tools`
-This performs real-time face recognition using the live camera feed to identify He/She. Each time a face is recognized, it records the name, date, and time in a data frame. Once a recognition count of 5 is reached, it saves the records to an Excel file, then resets the counter and DataFrame. It displays "He/She's name" or "Not He/She's name" over the video feed, and pressing 'q' exits the program with a final save of any remaining records.
+- **Functionality**: Captures real-time video to recognize faces, saving attendance logs after five detections. Exits and saves data when 'q' is pressed.
 
 - **Input:**
-
-![mousam_photo](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
+  ![Sample Input Image](https://github.com/user-attachments/assets/ef6b1a6e-57a9-4b60-a5c5-40bd47680012)
 
 - **Output:**
-
-![image](https://github.com/user-attachments/assets/0e67fd69-db4d-49be-88e6-9a331d62ccc5)
-
-
-![image](https://github.com/user-attachments/assets/f6575fd2-b8fb-4915-8864-90d3de696025)
-
-
+  ![Sample Output Image](https://github.com/user-attachments/assets/0e67fd69-db4d-49be-88e6-9a331d62ccc5)
+  ![Additional Output Image](https://github.com/user-attachments/assets/f6575fd2-b8fb-4915-8864-90d3de696025)
 
 #### E) `excel_sc`
-This is for face recognition with time-based logging looks well-structured and includes the logic to save screenshots and log attendance into an Excel file.
-
-1. **Efficiency**: Resizing frames to 640x480 is good for speed. You can reduce the size further if needed.
-2. **File Saving**: Screenshots are saved in `"Teja_screenshots(5)"`, and Excel is updated every 30 seconds.
-3. **Recognition Timings**: Logs every 30 seconds for the same person and logs every 5 minutes to avoid multiple entries in short time frames.
-4. **Error Handling**: Proper `try-except` block for handling errors.
-5. **Termination**: Exits when the 'q' key is pressed.
+- **Functionality**: Logs attendance to Excel, capturing screenshots every 30 seconds with error handling and termination on pressing 'q'.
 
 - **Input:**
-
-![mousam_photo](https://github.com/user-attachments/assets/dfc4223a-39ca-49c4-8a37-e1316e40b8b9)
-
+  ![Sample Input Image](https://github.com/user-attachments/assets/dfc4223a-39ca-49c4-8a37-e1316e40b8b9)
 
 - **Output:**
-
-![image](https://github.com/user-attachments/assets/5fc7f30e-ce33-4047-8e1a-c31e54c16b6b)
-
-
-![image](https://github.com/user-attachments/assets/8b5de8b6-4460-40be-b370-ebcb2dc9bfdf)
-
+  ![Sample Output Image](https://github.com/user-attachments/assets/5fc7f30e-ce33-4047-8e1a-c31e54c16b6b)
+  ![Additional Output Image](https://github.com/user-attachments/assets/8b5de8b6-4460-40be-b370-ebcb2dc9bfdf)
 
 #### F) `excel_sc_dt`
-This uses OpenCV and `face_recognition` to detect and recognize a specific face (His/Her's) from a webcam feed. Upon recognition, a screenshot is saved, and the attendance (name, date, time, screenshot path) is logged into an Excel file. The script processes every second frame, saves data every 30 seconds, and ensures attendance is only logged every 5 minutes for the same person. The attendance data is stored in a DataFrame and periodically exported to an Excel file.
-
-Key Features:
-- Real-time face detection and recognition
-- Saves screenshots with timestamp
-- Logs attendance to Excel every 30 seconds
-- Avoids multiple logs within a 5-minute interval for the same person
+- **Functionality**: Uses real-time face recognition to log attendance, capturing screenshots and avoiding multiple logs within a 5-minute interval.
 
 - **Input:**
-
-![mousam_photo](https://github.com/user-attachments/assets/e9b887a3-c584-41f1-a5a8-5d5c2c9bc3a9)
-
+  ![Sample Input Image](https://github.com/user-attachments/assets/e9b887a3-c584-41f1-a5a8-5d5c2c9bc3a9)
 
 - **Output:**
-
-![image](https://github.com/user-attachments/assets/b0867453-3e33-4962-b06c-6f9097943284)
-
-
-![image](https://github.com/user-attachments/assets/ca58f282-39ee-44cd-b6c4-4165d816fb3a)
-
+  ![Sample Output Image](https://github.com/user-attachments/assets/b0867453-3e33-4962-b06c-6f9097943284)
+  ![Additional Output Image](https://github.com/user-attachments/assets/ca58f282-39ee-44cd-b6c4-4165d816fb3a)
 
 #### G) `landmark`
-This code is a face recognition and attentiveness tracking system that operates in real time. Key functions include:
-
-1. **Face Recognition**: Detects and recognizes "His/Her's face" from the camera using a pre-loaded image.
-2. **Attentiveness Detection**: Uses facial landmarks and head pose estimation to assess if the subject is attentive.
-3. **Logging**: Records each recognition event with a timestamp, attentiveness status, and screenshot in an Excel file, saving every 30 seconds.
-4. **Live Feedback**: Displays "Attentive" or "Not Attentive" on the video feed along with facial landmarks.
-
-The system continues until you press 'q' to exit.
+- **Functionality**: Tracks attentiveness in real-time, logging events with timestamp and screenshot, and displays "Attentive" or "Not Attentive."
 
 - **Input:**
-
-![mousam_photo](https://github.com/user-attachments/assets/043e1cd9-a586-4f51-9e9c-76d2e69397bf)
-
+  ![Sample Input Image](https://github.com/user-attachments/assets/043e1cd9-a586-4f51-9e9c-76d2e69397bf)
 
 - **Output:**
-
-![image](https://github.com/user-attachments/assets/a153f6ac-cf89-4aa0-90d7-cebe64bc7758)
-
-
-![image](https://github.com/user-attachments/assets/ff1229d5-f576-46d1-b57b-713056cdb7f5)
-
+  ![Sample Output Image](https://github.com/user-attachments/assets/a153f6ac-cf89-4aa0-90d7-cebe64bc7758)
+  ![Additional Output Image](https://github.com/user-attachments/assets/ff1229d5-f576-46d1-b57b-713056cdb7f5)
 
 #### H) `atten_score`
-This script captures real-time webcam video to recognize "His/Her's face" and assess attentiveness based on head pose:
-
-1. **Setup**: Loads His/Her's face data and initializes detectors.
-2. **Face Recognition**: Compares detected faces with the known face, identifying if it's a match.
-3. **Attentiveness Check**: Estimates head orientation (yaw/pitch) to compute an attentiveness score.
-4. **Logging**: Logs details (name, date, time, attentiveness, screenshot) in an Excel file every 30 seconds if attentive.
-5. **Display**: Shows video with face labels, attentiveness status, and facial landmarks. 
-
-Exits on 'q' press, ensuring the final save to Excel.
+- **Functionality**: Computes attentiveness based on head pose and logs to Excel every 30 seconds if attentive.
 
 - **Input:**
-
-![mousam_photo](https://github.com/user-attachments/assets/731848e6-0bce-4971-84fe-e756729d76b6)
-
+  ![Sample Input Image](https://github.com/user-attachments/assets/731848e6-0bce-4971-84fe-e756729d76b6)
 
 - **Output:**
-
-![image](https://github.com/user-attachments/assets/cd5d5421-1e46-49fc-a07d-511cb2fad86e)
-
-
-![image](https://github.com/user-attachments/assets/65a0dafe-eebf-48ab-a8df-08d4b0e08c7e)
-
+  ![Sample Output Image](https://github.com/user-attachments/assets/cd5d5421-1e46-49fc-a07d-511cb2fad86e)
+  ![Additional Output Image](https://github.com/user-attachments/assets/65a0dafe-eebf-48ab-a8df-08d4b0e08c7e)
 
 #### I) `avg_atten_score`
-This captures webcam video, performs face recognition for "His/Her's face," calculates attentiveness based on the head pose, and logs the data into an Excel file every 30 seconds. Here is a summary of its key actions:
-
-1. **Face Recognition**: Uses `face_recognition` to identify "His/Her's face" by comparing face encodings.
-2. **Head Pose Detection**: Calculates the head pose (yaw, pitch) using `dlib`'s facial landmark predictor to assess attentiveness.
-3. **Attentiveness Calculation**: Computes an attentiveness score based on yaw and pitch, with values between 0 (not attentive) and 1 (fully attentive).
-4. **Logging**: Every 30 seconds, the script saves recognized face data (name, date, time, attentiveness, attention score, and screenshot) into an Excel file.
-5. **Display and Feedback**: Shows real-time video with facial landmarks, attentiveness status, and face bounding boxes.
-
-The final output includes an Excel file with logged details and an average attentiveness score at the end of the session. The user can stop the video stream by pressing 'q'.
+- **Functionality**: Calculates attentiveness scores and logs data to Excel every 30 seconds, displaying an average attentiveness score at the end of the session.
 
 - **Input:**
-
-![mousam_photo](https://github.com/user-attachments/assets/3e8f0c19-08cf-497c-8463-89e6b6e4de95)
-
+  ![Sample Input Image](https://github.com/user-attachments/assets/3e8f0c19-08cf-497c-8463-89e6b6e4de95)
 
 - **Output:**
+  ![Sample Output Image](https://github.com/user-attachments/assets/c45ca786-e6de-4f19-867f-f643e5aee5ab)
+  ![Additional Output Image 1](https://github.com/user-attachments/assets/399a5178-f728-4e24-8dca-df6dc5536b0f)
+  ![Additional Output Image 2](https://github.com/user-attachments/assets/3eb18991-da16-42e7-add4-685c8d950ff2)
 
-![image](https://github.com/user-attachments/assets/c45ca786-e6de-4f19-867f-f643e5aee5ab)
+---
 
-![image](https://github.com/user-attachments/assets/399a5178-f728-4e24-8dca-df6dc5536b0f)
-![image](https://github.com/user-attachments/assets/3eb18991-da16-42e7-add4-685c8d950ff2)
+Each feature is designed to enhance face recognition, attendance tracking, and attentiveness monitoring, supporting engagement tracking in educational applications.
+
 
 
