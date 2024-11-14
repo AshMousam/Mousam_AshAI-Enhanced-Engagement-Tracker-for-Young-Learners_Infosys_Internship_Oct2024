@@ -11,14 +11,14 @@ Developed Logics -
 A) image_concatenation:- This resizes two images, to given trange of pixels and combines them both horizontally and vertically. Using np.hstack() and np.vstack(), the images are concatenated side-by-side and one on top of the other, respectively. The concatenated results are displayed in separate windows.
 
 Input :-
+![download](https://github.com/user-attachments/assets/9877bd95-e226-426c-9395-bc59153199a3)
+![OIP](https://github.com/user-attachments/assets/4a0c9a80-c161-4199-b332-6d0c3cb5ffcc)
 
-![image1](https://github.com/user-attachments/assets/def5004a-cd57-4a19-9721-ac6e9c2b1f39) 
-
-![image2](https://github.com/user-attachments/assets/83b09ad4-d964-4f79-8cfd-0e287c180604)
 
 Output :- 
 
-![Screenshot 2024-11-12 182327](https://github.com/user-attachments/assets/5bfdbc56-7f86-4f11-8af8-a245bb72787a)
+![image](https://github.com/user-attachments/assets/bb95e7e3-61fa-4c3d-b2ee-8705892ea3bc)
+
 
 B) image_contour :- This detects contours in a grayscale image. First, it applies a binary threshold to the image to separate foreground from background. Then, it finds contours using cv2.findContours() and draws them onto the original image in green. The result, with highlighted contours, is displayed in a separate window.
 
