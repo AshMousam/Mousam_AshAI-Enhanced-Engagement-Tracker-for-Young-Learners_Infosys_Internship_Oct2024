@@ -332,13 +332,16 @@ Key Features:
 
 - **Input:**
 
-![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+![mousam_photo](https://github.com/user-attachments/assets/e9b887a3-c584-41f1-a5a8-5d5c2c9bc3a9)
+
 
 - **Output:**
 
-![Guru_Teja_2024-11-07_20-31-07](https://github.com/user-attachments/assets/967c8d9b-81f1-4ed1-bf0c-de2046ac778b)
+![image](https://github.com/user-attachments/assets/b0867453-3e33-4962-b06c-6f9097943284)
 
-![Screenshot 2024-11-13 183611](https://github.com/user-attachments/assets/96d0afcd-ad2b-4904-86ad-67d03cdac268)
+
+![image](https://github.com/user-attachments/assets/ca58f282-39ee-44cd-b6c4-4165d816fb3a)
+
 
 #### G) `landmark`
 This code is a face recognition and attentiveness tracking system that operates in real time. Key functions include:
