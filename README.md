@@ -145,11 +145,13 @@ L) image_blur :- This code applies a Gaussian blur to an image using a 15x15 ker
 
 Input :- 
 
-![image1](https://github.com/user-attachments/assets/9052a6fe-fe8e-41f8-a078-6928d5ae0f32) 
+ ![download](https://github.com/user-attachments/assets/e3e2cfad-ab4e-4696-87bc-f7b176b06d18)
+
 
 Output :- 
 
-![Screenshot 2024-11-12 183920](https://github.com/user-attachments/assets/a0cfade1-69db-48ae-a533-c7512a78e4cc)
+![image](https://github.com/user-attachments/assets/dfe50e24-cbe3-491d-be99-e7b7b433c681)
+
 
 
 M) image_noise removal & closing gaps:- This performs morphological operations on a grayscale image. It first checks if the image is loaded successfully, then defines a kernel matrix to apply:
