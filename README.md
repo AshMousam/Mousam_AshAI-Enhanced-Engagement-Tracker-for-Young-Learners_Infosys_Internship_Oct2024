@@ -438,13 +438,14 @@ https://github.com/user-attachments/assets/0d209679-4178-43cb-bc46-d5d38a4582e2
 
 - **Screenshots**: Stored in the `monitoring_screenshots` directory
 - sample output:
+- Random captures during sessions
+- Named with timestamp and student ID
+  
 ![mousam_photo_20241129_193013](https://github.com/user-attachments/assets/d1d20a4a-c804-4aac-abb2-e9e496d2434b)
 ![mousam_photo_20241129_195445](https://github.com/user-attachments/assets/a23e4237-ca66-4a0d-9b57-c0650c18db13)
 ![mousam_photo_20241129_194135](https://github.com/user-attachments/assets/5e65d575-fb49-4bed-ac41-0641b9ef13a6)
 ![mousam_photo_20241129_193455](https://github.com/user-attachments/assets/20594555-b690-4604-8ff2-3f27ad748078)
 
-  - Random captures during sessions
-  - Named with timestamp and student ID
 
 ## Security Features
 - Unknown face detection
