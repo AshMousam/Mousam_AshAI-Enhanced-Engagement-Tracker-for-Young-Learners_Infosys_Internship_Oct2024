@@ -352,3 +352,120 @@ Each feature is designed to enhance face recognition, attendance tracking, and a
 
 
 
+
+# Advanced Student Monitoring System
+
+## Overview
+The Advanced Student Monitoring System is a sophisticated Python application designed to monitor student attention and engagement during online learning sessions. It uses computer vision and facial recognition technologies to track student presence, attention levels, and suspicious activities in real-time.
+
+## Features
+- **Face Recognition**: Identifies registered students and detects unknown faces
+- **Attention Monitoring**: 
+  - Tracks eye movements and mouth positions
+  - Calculates real-time attention scores
+  - Monitors head position and orientation
+- **Activity Tracking**:
+  - Records student attendance (login/logout times)
+  - Monitors keyboard activity for suspicious behavior
+  - Takes random screenshots for verification
+- **Logging System**:
+  - Generates detailed Excel logs for each student
+  - Tracks face missing incidents
+  - Records average attention scores
+  - Documents keyboard events and screenshots
+
+## Prerequisites
+
+Required packages:
+- OpenCV (cv2)
+- face_recognition
+- dlib
+- pandas
+- numpy
+- imutils
+- keyboard
+
+## Project Structure
+student_monitoring/
+│
+├── advanced_student_monitoring.py # Main application file
+├── known_students/ # Directory for student reference images
+├── monitoring_screenshots/ # Directory for captured screenshots
+├── student_logs/ # Directory for Excel log files
+└── shape_predictor_68_face_landmarks.dat # Required facial landmark model
+
+## Setup Instructions
+1. Install the required dependencies
+2. Download the shape predictor file from dlib's official repository
+3. Create a directory for known students and add their reference photos
+4. Update the model path in the code to point to your shape predictor file
+
+## Usage
+1. Add student reference photos to the `known_students` directory
+   - Name format: `student_name.jpg`
+   - One clear frontal face photo per student
+
+2. Run the application: python advanced_student_monitoring.py
+   
+4. The system will:
+   - Start the webcam
+   - Begin monitoring students
+   - Display real-time video feed with attention scores
+   - Generate logs automatically
+
+5. Press 'q' to quit the application
+
+## Configuration
+You can adjust various parameters in the `StudentMonitoringSystem` class:
+- `MAX_YAW_THRESHOLD`: Maximum head rotation threshold
+- `MAX_PITCH_THRESHOLD`: Maximum head tilt threshold
+- `KEYBOARD_THRESHOLD`: Maximum allowed keyboard events per minute
+
+## Output
+some sample are:
+
+
+https://github.com/user-attachments/assets/0d209679-4178-43cb-bc46-d5d38a4582e2
+
+![image](https://github.com/user-attachments/assets/23a910c5-7b77-4c40-8345-39284024f400)
+
+
+- **Excel Logs**: Generated in the `student_logs` directory
+  - Date and time stamps
+  - Attendance records
+  - Attention scores
+  - Activity metrics
+
+- **Screenshots**: Stored in the `monitoring_screenshots` directory
+- sample output:
+![mousam_photo_20241129_193013](https://github.com/user-attachments/assets/d1d20a4a-c804-4aac-abb2-e9e496d2434b)
+![mousam_photo_20241129_195445](https://github.com/user-attachments/assets/a23e4237-ca66-4a0d-9b57-c0650c18db13)
+![mousam_photo_20241129_194135](https://github.com/user-attachments/assets/5e65d575-fb49-4bed-ac41-0641b9ef13a6)
+![mousam_photo_20241129_193455](https://github.com/user-attachments/assets/20594555-b690-4604-8ff2-3f27ad748078)
+
+  - Random captures during sessions
+  - Named with timestamp and student ID
+
+## Security Features
+- Unknown face detection
+- Suspicious keyboard activity monitoring
+- Random screenshot verification
+- Comprehensive activity logging
+
+## Limitations
+- Requires good lighting conditions
+- Depends on stable internet connection for real-time processing
+- Requires proper camera positioning
+
+## Contributing
+Feel free to fork this project and submit pull requests for any improvements.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+- dlib for facial landmark detection
+- face_recognition library for face recognition capabilities
+- OpenCV community for computer vision tools
+
+
