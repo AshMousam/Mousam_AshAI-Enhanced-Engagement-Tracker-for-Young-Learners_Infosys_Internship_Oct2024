@@ -1,0 +1,11 @@
+
+Required packages:
+- OpenCV (cv2)
+- face_recognition
+- dlib
+- pandas
+- numpy
+- imutils
+- keyboard
+
+## Project Structure
